@@ -1,0 +1,521 @@
+/* Table of Content
+==================================================
+1.  Global Styles
+2.  Header
+3.  Slider
+4.  Services
+5.  Features
+6.  Portfolio
+7.  Post & Service
+8.  Testimonial
+9.  Call to Action
+10. Clients
+11. Footer
+12. Subpages
+13. Blog
+14. Responsive */
+/* Подключение шрифтов
+================================================== */
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria.eot"),
+  url("../fonts/Geometria.ttf"), 
+  url("../fonts/Geometria.woff"); 
+}
+
+@font-face {
+  font-family: 'Geometria-Heavy';
+  src: url("../fonts/Geometria-Heavy.eot"),
+  url("../fonts/Geometria-Heavy.ttf"), 
+  url("../fonts/Geometria-Heavy.woff"); 
+}
+@font-face {
+  font-family: 'Geometria-Extra';
+  src: url("../fonts/Geometria-ExtraBold.eot"),
+  url("../fonts/Geometria-ExtraBold.ttf"), 
+  url("../fonts/Geometria-ExtraBold.woff"); 
+}
+
+@font-face {
+  font-family: 'Geometria-Bold';
+  src: url("../fonts/Geometria-Bold.eot"),
+  url("../fonts/Geometria-Bold.ttf"), 
+  url("../fonts/Geometria-Bold.woff"); 
+}
+/* Переменные
+================================================== */
+
+$dark-blue:#04569f;
+$dark-black: #012646;
+$light-blue:#3887cf;
+$dark-gray:#242f38;
+$geo-n:"Geometria", san-serif;
+$geo-ex:"Geometria-Extra", san-serif;
+$geo-he:"Geometria-Heavy",san-serif;
+$bg-gr: #f4f4f4;
+/* Главный стили
+
+================================================== */
+body {
+
+  font-family:Geometria,sen-serif !important;
+  color: $dark-blue;
+
+ }
+ a:hover {
+     text-decoration:none;
+
+
+ }
+ .fs-14px {
+ 	font-size: 14px;
+ }
+.fs-13px {
+	font-size: 13px;
+}
+
+
+ .text--dark-blue {
+	color:$dark-blue;
+ }
+ ul {
+ 	list-style: none;
+ 	padding: 0;
+ 	margin-top: 0;
+ }
+
+/* Хедер
+
+================================================== */
+.header{
+	margin-top: 50px;
+	margin-bottom: 38px;
+}
+.logo__link {
+	font-size: 32px;
+	font-family: Geometria-Heavy, san-serif;
+	word-spacing: -7px;
+
+}
+.information-company-description {
+	color: #000000; 
+	font-family: $geo-n;
+	line-height: 14px;
+}
+.contact {
+	float:right;
+	position: relative;
+	margin-top: 11px;
+    margin-right: 19px;
+    color:$dark-black;
+
+	&__address {
+	position: relative;
+	font-size: 16px;
+	font-family: $geo-n;
+	color:inherit;
+	font-weight: 700;
+	margin-bottom: 17px;
+}
+	
+ 	&__address:before {
+ 	 content: "";
+ 	 background-image: url('../img/mark.png');
+     background-size: 14px 19px; 
+     width: 14px; 
+     height: 19px; 
+     position: absolute;
+     left: -31px;
+ 	}
+ 	&__email {
+ 		font-weight: 700;
+ 		color:inherit;
+ 		position: relative;
+ 	}
+ 	&__email:hover {
+ 		color: inherit;
+ 	}
+
+ 	&__email:before {
+ 	 content: "";
+ 	 background-image: url('../img/message.png');
+     background-size: 20px 14px; 
+     width: 20px; 
+     height: 14px; 
+     position: absolute;
+     left: -33px;
+     top: 4px;
+ 	}
+}
+
+.phone {
+	 margin-left: 23.921%;
+	 color: $dark-black;
+	&__link {
+		font-family: $geo-ex;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 39px;
+		letter-spacing: 0.8px;
+		color: inherit;
+	}
+	&__link:hover{
+		color: inherit;
+
+	}
+	&__btn{
+		width:100%;
+        height: 31px;
+        margin-top: 4px;
+	
+
+	}
+}
+.btn {
+	border: 1px solid $dark-blue;
+	background-color: #ffffff;
+	font-family: $geo-n;
+	font-weight: 700;
+	color: $dark-black;
+    border-radius: 0;
+
+}
+.btn:focuse {
+	outline: 0;
+	box-shadow: none;
+}
+/* Навигация
+
+================================================== */
+.navigaton {
+	width: 100%;
+
+	margin-top:69px;
+
+}
+.navigaton {
+
+	background: $dark-blue;
+	height: 60px;
+
+}
+.menu {
+	display: flex;
+}
+.menu-item {
+	width: 14.69%;
+}
+.menu-link{
+    width: 100%;
+    display: block;
+    height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 39px;
+    color: white;
+    box-sizing: border-box;
+    padding: 14px 13% 12px 13%;
+    text-align: center;
+}
+.menu-link:hover {
+	background: $light-blue;
+	color: white;
+	
+}
+.services {
+	margin-bottom: 30px;
+}
+.services-information {
+	width: 100%;
+	background: url(../img/bg-information.jpg) 100% 100% no-repeat;
+	height: 370px;
+	background-position: center;
+	padding: 102px 49px 93px;
+	color: white;
+
+	&__title{
+		font-family: $geo-he;
+		font-size: 45px;
+		color: inherit;
+		letter-spacing: -1.13px;
+		line-height: 55px;
+		margin-bottom:28px;
+
+	}
+	&__par {
+		color: inherit;
+		font-family: $geo-n;
+		font-size: 18px;
+	    font-weight: 700;
+	}
+}
+.general-aside {
+ 	background: $bg-gr;
+ 	width: 278px;
+
+}
+.products-menu {
+	padding-bottom: 32px;
+	&__title{
+		background: $dark-blue;
+		width: 100%;
+		height: 75px;
+		text-align: center;
+		font-size: 22px;
+		font-weight: 700;
+		font-family: $geo-n;
+		color: white;
+	    padding-top: 29px;
+
+	}
+	&__item {
+       padding-left: 38px;
+	   padding-top: 27px;
+	
+	}
+
+	&__link {
+		display: block;
+		color: #303030;
+		font-size: 13px;
+		font-weight: 700;
+	    position: relative;
+	}
+	 
+	  &__link:hover{
+		color: $light-blue;
+		text-decoration: underline;
+
+	}
+	
+}
+.link-1{
+	line-height:14px;
+
+}
+ .link-1:before{
+		display: block;
+		content: "";
+		width: 24px;
+		height: 22px;
+		background: url(../img/icon/till.png);
+        float: left;
+        margin-right: 21px;
+        margin-top: 2px;
+}
+      
+
+.link-2 {
+	line-height: 27px;
+}
+.link-2:before {
+	display: block;
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url(../img/icon/terminal.png);
+	float: left;
+	margin-right: 21px;
+}
+
+.link-3{
+	line-height:14px;
+}
+.link-3:before{
+	display: block;
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url(../img/icon/accessories.png);
+	float: left;
+	margin-right: 21px;
+	margin-top:2px;
+
+}
+.link-4 {
+	line-height: 25px;
+}
+.link-4:before{
+	display: block;
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url(../img/icon/libra.png);
+	float: left;
+	margin-right: 21px;
+
+}
+.link-5 {
+	line-height: 30px;
+}
+.link-5:before{
+	display: block;
+	content: "";
+	width: 23px;
+	height: 29px;
+	background: url(../img/icon/ofd.png);
+	float: left;
+	margin-right: 21px;
+
+}
+.link-6 {
+	line-height: 34px;
+
+}
+.link-6:before{
+	display: block;
+	content: "";
+	width: 20px;
+	height: 32px;
+	background: url(../img/icon/printer-check.png);
+	float: left;
+	margin-right: 21px;
+
+}
+.link-7 {
+	line-height: 34px;
+
+}
+.link-7:before{
+	display: block;
+	content: "";
+	width: 26px;
+	height: 26px;
+	background: url(../img/icon/printer-labels.png);
+	float: left;
+	margin-right: 21px;
+
+}
+
+.link-8 {
+	line-height: 14px;
+
+}
+.link-8:before{
+	display: block;
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url(../img/icon/programs.png);
+	float: left;
+	margin-right: 21px;
+	margin-top: 2px;
+
+}
+.link-9 {
+	line-height: 21px;
+
+}
+.link-9:before{
+	display: block;
+	content: "";
+	width: 24px;
+	height: 24px;
+	background: url(../img/icon/scanner.png);
+	float: left;
+	margin-right: 21px;
+
+}
+.content__link {
+	margin-bottom: 15px;
+}
+.content__link a {
+  color: #474747;
+  font-size: 15px;
+
+
+}
+.stick {
+	display: inline;
+	  color: #474747;
+	  padding-left: 20px;
+	  padding-right: 20px;
+}
+.active {
+
+ font-family: 'Geometria-Bold';
+font-weight: 700;
+letter-spacing: 0.07px;
+color: $dark-blue !important;
+
+}
+.content{
+	margin-left: 38px;
+}
+.content {
+&-title{
+	font-size: 32px;
+	color: $dark-blue;
+	font-weight: 900;
+	margin-bottom:35px;
+
+}
+&-text{
+	color: $dark-gray;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-bottom: 31px;
+}
+
+}
+.list{
+
+}
+
+.list li::before {
+  content: "\2022";  
+  color:  $dark-blue; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 19px; 
+  font-size: 25px;
+  margin-left: 22px;
+  float: left;
+}
+.content-subtitle {
+	font-size: 25px;
+	font-weight: 700;
+	color: $dark-blue;
+	margin-bottom:29px;
+}
+.brands {
+	height: 87px;
+	display: flex;
+	
+}
+.our-brands {
+	padding: 28px 44px 23px 53px;
+	background: $dark-blue;
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	width: 25%;
+
+
+}
+
+.slider {
+   background: #f4f4f4;
+	width: 75%;
+
+}
+.menu-footer__item {
+	padding: 14px 13% 12px 13%;
+}
+.menu-footer__link {
+	color: $dark-blue;
+	font-size: 16px;
+	font-weight: 700;
+
+}
+.menu-footer{
+	display: flex;
+	width: 100%;
+}
+.menu-footer__link:hover {
+	color: $light-blue;
+	text-decoration: underline;
+
+}
