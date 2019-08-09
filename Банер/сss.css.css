@@ -1,0 +1,19 @@
+.kek {
+  height: 700px;
+}
+.banner {
+  width: 1080px;
+  height: 607px;
+}
+.banner_wrap {
+  width: 100%;
+  height: 100%;
+  background: url('layer-one.png') no-repeat;
+}
+.banner-layer__triangle {
+  background: url('layer-triangle.png') no-repeat;
+  z-index: 10;
+  width: 78%;
+  height: 93%;
+  margin-top: 10px;
+}
