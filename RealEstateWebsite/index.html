@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Сайт</title>
+	<link rel="stylesheet" href="sass/css.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	
+</head>
+<body>
+	<header class="header-page">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8  ">
+		  		<div class="logo header-page__logo" >
+			      <h1  class="logo__text">Realestate Company</h1>
+			   	  <span class="logo__small-text">
+			   	Lorem Ipsum is simply dummy text
+			     </span>
+		    </div>	
+		</div>
+		<div class="col-xs-4 ">
+			<div class="number header-page__number">
+				Call us: (214) 227-7669
+			</div>
+		</div>
+	   </div>
+     </div>
+	</header>
+	 <nav class="nav-bg limitetd-width">
+	 	<div class="container">
+	 		<div class="row">
+	 			<div class="col-xs-9">
+				<ul class="menu nav-bg__menu">
+				<li class="menu__item"><a href="#" class="menu__link" >Home</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Our Story</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Tenant</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Owner</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
+			</ul>
+		</div>
+		<div class="col-xs-3">
+			<ul class="menu-autf nav-bg__menu-autf">
+				<li class="menu-autf__item"><a href="#" class="menu-autf__link">Sign in</a>/</li>
+				<li class="menu-autf__item"><a href="#" class="menu-autf__link">Sign up</a></li>
+			</ul>
+		</div>
+	       </div>
+         </div>	
+      </nav> 
+	<article class="section-one">
+		<div class="container">
+				<div class="row">
+					<div class="col-xs-7">
+						<div class="slider-block section-one__slider-block">
+							<div class="slide-block">
+								<div id="slide-block__left" class="size" onclick="showSlide(-1)"></div>
+								<div id="slide-block__right"  class="size" onclick="showSlide(1) "></div>
+
+								<div id="slide-block__container">
+								   <div class="slide-block__item">
+						       		<img src="assets/img/workplace.png" alt="picture-home" class="slide-block__img">
+							   		<div class="slide-block__text"><span class="slide-block__caption">Lsasorem Ipsum is simply dummy text of</span>
+							   		<span class="slide-block__indent">We work with investors to make managing your investments easy!</span>
+							      </div>
+							    </div>
+							 	<div class="slide-block__item">
+						       		<img src="assets/img/workplace.png" alt="picture-home" class="slide-block__img">
+							   		<div class="slide-block__text"><span class="slide-block__caption">XXX</span>
+							   		<span class="slide-block__indent">We work with investors to make managing your investments easy!</span>
+							      	</div>
+							 	</div>
+							 	<div class="slide-block__item">
+						       		<img src="assets/img/workplace.png" alt="picture-home" class="slide-block__img">
+							   		<div class="slide-block__text"><span class="slide-block__caption">Lorem Ipsum is simply dummy text of</span>
+							   		<span class="slide-block__indent">We work with investors to make managing your investments easy!</span>
+							      </div>
+							 	</div>
+							 	<div class="slide-block__item">
+						       		<img src="assets/img/workplace.png" alt="picture-home" class="slide-block__img">
+							   		<div class="slide-block__text"><span class="slide-block__caption">Lorem Ipsum is simply dummy text of</span>
+							   		<span class="slide-block__indent">We work with investors to make managing your investments easy!</span>
+							      </div>
+							 	</div>
+							 	 <div class="slide-block__item">
+						       		<img src="assets/img/workplace.png" alt="picture-home" class="slide-block__img">
+							   		<div class="slide-block__text"><span class="slide-block__caption">Lorem Ipsum is simply dummy text of</span>
+							   		<span class="slide-block__indent">We work with investors to make managing your investments easy!</span>
+							      </div>
+							      </div>	
+						   	  </div>
+						</div>
+						<div class="dot slide-block__dot">
+						  	 	<span class="dot__item activ" onclick="changeSlideClick(0)" ></span>
+						  	 	<span class="dot__item no-active" onclick="changeSlideClick(1)"></span>
+						  	 	<span class="dot__item no-active" onclick="changeSlideClick(2)"></span>
+						  	 	<span class="dot__item no-active" onclick="changeSlideClick(3)"></span>
+						  	 	<span class="dot__item no-active" onclick="changeSlideClick(4)"></span>
+						   </div>
+			     </div>
+			</div>
+			<div class="col-xs-5">
+				<div class="search-sell-home section-one__search-sell-home">
+								<ul class="search-sell-home__menu">
+									<li class="search-sell-home__item">
+									   <a href="javascript:%20void(0);" class="search-sell-home__link" onclick="switchBlock(0)">Tenants</a>
+									 </li>
+									<li class="search-sell-home__item">
+										<a href="javascript:%20void(0);" class="search-sell-home__link change-size-color"  onclick="switchBlock(1)">Owners</a>
+                                         <div class="search-sell-home__block" id="search-block-two">
+                                         </div>
+									</li>
+								</ul>
+								 <div class="search-sell-home__block" id="search-block-one" >
+									   	<span class="search-sell-home__text">
+									   	   Address, Suburbs, Postcodes, or Regions 
+									   	</span>
+									   	<form action="#" class="search-sell-home__forms">
+									   		<input type="text" class="search-sell-home__locate" name="locate" value ="Example: Wichita Falls, Texas 76301"> 
+									   		<div class="check-block  search-sell-home__check-block clearfix">
+									   		 <input type="checkbox" name="suburbs" value="Suburbs"
+									   		 class="check-block__suburbs" id="checks">
+									   		 <label for="checks" class="check-block__label">Include surrounding suburbs</label>
+									   	   </div>
+                                             
+					                         <div class="select-box-wrapper clearfix">
+					                           <div class="select-box-wrapper__text">
+					                           	Property Type :
+					                           </div>
+					                          	<div class="select-box search-sell-home__select-box">
+									   		 	  <select name="select" class="select-box__item ">
+									   		 		<option value="Select one">Select one</option>
+									   		 		<option value="Select two">Select two</option>
+									   		 		<option value="Select three">Select three</option>
+									   		 	  </select>
+									   		  </div>
+									   		 </div>
+					                          <div class="select-box-wrapper">
+					                           <div class="select-box-wrapper__text select-text-pad">
+					                           	Bedrooms :
+					                           </div>
+					                          	<div class="select-box search-sell-home__select-box ">
+									   		 	<select name="select" class="select-box__item ">
+									   		 		<option value="Select one">Select one</option>
+									   		 		<option value="Select two">Select two</option>
+									   		 		<option value="Select three">Select three</option>
+									   		 	</select>
+									   		  </div>
+									      </div>
+									      <input type="button" class="btn search-sell-home_btn" value="Search">
+									     </form>
+									   </div>
+									   <div class="search-sell-home__block" id="search-blocks">
+									   	<span class="search-sell-home__text">
+									   	   Address, Suburbs, Postcodes, or Regions 
+									   	</span>
+									   	<form action="#" class="search-sell-home__forms">
+									   		<input type="text" class="search-sell-home__locate" name="locate" value ="Example: Wichita Falls, Texas 76301"> 
+									   		  <div class="select-box-wrapper">
+					                         <div class="select-box search-sell-home__select-box ">
+									   		 	<select name="select" class="select-box__item ">
+									   		 		<option value="Select one">Sell</option>
+									   		 		<option value="Select two">To rent</option>
+									   		 	
+									   		 	</select>
+									   		  </div>
+									      </div>
+					                         <div class="select-box-wrapper clearfix">
+					                           <div class="select-box-wrapper__text">
+					                           	Property Type :
+					                           </div>
+					                          	<div class="select-box search-sell-home__select-box">
+									   		 	  <select name="select" class="select-box__item ">
+									   		 		<option value="Select one">Select one</option>
+									   		 		<option value="Select two">Select two</option>
+									   		 		<option value="Select three">Select three</option>
+									   		 	  </select>
+									   		  </div>
+									   		 </div>
+					                          <div class="select-box-wrapper">
+					                           <div class="select-box-wrapper__text select-text-pad">
+					                           	Bedrooms :
+					                           </div>
+					                          	<div class="select-box search-sell-home__select-box ">
+									   		 	<select name="select" class="select-box__item ">
+									   		 		<option value="Select one">Select one</option>
+									   		 		<option value="Select two">Select two</option>
+									   		 		<option value="Select three">Select three</option>
+									   		 	</select>
+									   		  </div>
+									      </div>
+									      <input type="button" class="btn search-sell-home_btn" value="Continue">
+									     </form>
+									   </div>
+									</div>
+								</div>
+							</div>	
+			</article>
+     <article class="section-two">
+     	<div class="container">
+     					<div class="row">
+     						<div class="col-xs-4">
+     							<div class="sell-block">
+     								<div class="sell-block__title-text">Buy a home</div>
+     								<p class="sell-block__text">
+     									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+ 		 							
+     								</p>
+     							</div>
+     						</div>
+     						<div class="col-xs-4">
+     							<div class="sell-block">
+     								<div class="sell-block__title-text">Sell a home</div>
+     								<p class="sell-block__text">
+     									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+ 		 								
+     								</p>
+     							</div>
+     						</div>
+     						<div class="col-xs-4">
+     							<div class="sell-block">
+     								<div class="sell-block__title-text">Rent a home</div>
+     								<p class="sell-block__text">
+     									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+ 		 							</p>
+     							</div>
+     						</div>
+     					</div>
+     				</div>			
+     	
+     </article>
+     <article class="section-three">
+     	<div class="container">
+     		<div class="row">
+     			<div class="col-xs-3">
+     			   <div class="gallery-block section-three__gallery-block">
+     			   	<img src="assets/img/shop.png" alt="shop" class="gallery-block__img">
+     			   	<div class="gallery-block__address">
+     			   		4605 Bayonne Court <br>
+     			   		<span class="gallery-block__text">Arlington, TX 76016</span>
+     			   	</div>  
+     			   </div>
+     			</div>
+     			<div class="col-xs-3">
+     			 <div class="gallery-block section-three__gallery-block">
+     			   	<img src="assets/img/shop.png" alt="shop" class="gallery-block__img">
+     			   	<div class="gallery-block__address">
+     			   		4605 Bayonne Court <br>
+     			   		<span class="gallery-block__text">Arlington, TX 76016</span>
+     			   	</div>  
+     			   </div>
+     			</div>
+     			<div class="col-xs-3">
+     				<div class="gallery-block section-three__gallery-block">
+     			   	<img src="assets/img/shop.png" alt="shop" class="gallery-block__img">
+     			   	<div class="gallery-block__address">
+     			   		4605 Bayonne Court <br>
+     			   		<span class="gallery-block__text">Arlington, TX 76016</span>
+     			   	</div>  
+     			   </div>
+     				
+     			</div>
+     			<div class="col-xs-3">
+     				<div class="gallery-block section-three__gallery-block">
+     			   	<img src="assets/img/shop.png" alt="shop" class="gallery-block__img">
+     			   	<div class="gallery-block__address">
+     			   		4605 Bayonne Court <br>
+     			   		<span class="gallery-block__text">Arlington, TX 76016</span>
+     			   	</div>  
+     			   </div>
+     				
+     			</div>
+     		</div>
+     	</div>
+     	<div class="container">
+     		<div class="row">
+     		<div class="col-xs-3">
+     			   <div class="gallery-block section-three__gallery-block">
+     			   	<img src="assets/img/shop.png" alt="shop" class="gallery-block__img">
+     			   	<div class="gallery-block__address">
+     			   		4605 Bayonne Court <br>
+     			   		<span class="gallery-block__text">Arlington, TX 76016</span>
+     			   	</div>  
+     			   </div>
+     			</div>
+     			<div class="col-xs-3">
+     			 <div class="gallery-block section-three__gallery-block">
+     			   	<img src="assets/img/shop.png" alt="shop" class="gallery-block__img">
+     			   	<div class="gallery-block__address">
+     			   		4605 Bayonne Court <br>
+     			   		<span class="gallery-block__text">Arlington, TX 76016</span>
+     			   	</div>  
+     			   </div>
+     			</div>
+     			<div class="col-xs-3">
+     				<div class="gallery-block section-three__gallery-block">
+     			   	<img src="assets/img/shop.png" alt="shop" class="gallery-block__img">
+     			   	<div class="gallery-block__address">
+     			   		4605 Bayonne Court <br>
+     			   		<span class="gallery-block__text">Arlington, TX 76016</span>
+     			   	</div>  
+     			   </div>
+     				
+     			</div>
+     			<div class="col-xs-3">
+     				<div class="gallery-block section-three__gallery-block">
+     			   	<img src="assets/img/shop.png" alt="shop" class="gallery-block__img">
+     			   	<div class="gallery-block__address">
+     			   		4605 Bayonne Court <br>
+     			   		<span class="gallery-block__text">Arlington, TX 76016</span>
+     			   	</div>  
+     			   </div>
+     				
+     			</div>
+     		</div>
+     	</div>
+     </article>
+     <article class="section-four">
+       <div class="container">
+       	<div class="row">
+       		<div class="col-xs-6">
+       			<div class="authorization-block section-four__authorization-block decor-blocks">
+       				    <div class="authorization-block__text texts">Member login</div>
+       			
+       				    	<form action="#" class="authorization-block__form" >
+       				    		<input type="text" class=" login authorization-block__login decor" name="login"  placeholder="User name">
+       				    		<input type="password" name="pass" class="pass authorization-block__pass decor" placeholder="Password">
+       				    		<input type="button" class="btn authorization-block__btn" value="Login">
+       				    	</form>
+       				   
+       			</div>
+       			<div class="registr-block section-four__registr-block ">
+       				<div class="registr-block__invitation">
+       					Not a member yet
+       				</div>
+       				<div class="registr-block__new-ac">
+       					 Signup Now
+       				</div>
+
+       			</div>
+       		</div>
+       		<div class="col-xs-6">
+       			<div class="subscription-block decor-blocks four-section__subscription-block">
+       				<div class="subscription-block__text">Subscribe to our weekly newsletter</div>
+       				<form action="#">
+       					<input type="email" class="subscription-block__email entry-field" name="subscription" placeholder="email address">
+       					<input type="button" class=" btn subscription-block__btn" value="Subscribe"></input>
+       				</form>
+       			</div>
+       			<ul class="pic-messager">
+       				<li class="pic-messager__item"><a href="#" class="pic-messager__link"><img src="assets/img/facebook.png" alt="facebook"></a></li>
+       				<li class="pic-messager__item"><a href="#" class="pic-messager__link"><img src="assets/img/twiter.png" alt="twiter" class="pic-messager__img"></a></li>
+       				<li class="pic-messager__item"><a href="#" class="pic-messager__link"><img src="assets/img/gogle.png" alt="google" class="pic-messager__img"></a></li>
+       			</ul>
+       		</div>
+       	</div>
+       </div>
+     	
+     </article>
+     <footer class="cellar">
+     	<div class="container">
+     		<div class="row">
+     			<div class="col-md-4">
+     				<div class="block-about-us">
+     					<ul class="block-about-us-menu mar-right">
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-bold">About us</a></li>
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-st">About us</a></li>
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-st">Why us</a></li>
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-st">Customer Stories</a></li>
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-st">Press Resources</a></li>
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-st">Press Releases</a></li>
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-st">Contact us</a></li>
+     					</ul>
+     					<ul class="block-about-us-menu">
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-bold">Proparties</a></li>
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-st">Rent a home</a></li>
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-st">Lease a home</a></li>
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-st">Buy a home</a></li>
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-st">Sell a home</a></li>
+     						<li class="block-about-us-menu__item"><a href="#" class="block-about-us-menu__link text-st">Ask advices</a></li>
+     						
+     					</ul>
+     				</div>
+     			</div>
+     			<div class="col-md-5">
+     				<div class="custumer-block">
+     					<div class="custumer-block__text text-bold">
+     						Costamer Testimonials  
+     					</div>
+     					<p class="custumer-block__par text-st">
+     						Lorem Ipsum is simply dummy text of the printing and 
+							typesetting industry. Lorem Ipsum has been the industr
+							standard dummy text ever since the 1500s, 
+							when an unknown printer took a 
+     						
+     					</p>
+     					<p class="custumer-block__selected-text">
+     							Lorem Ipsum is simply <br>Owner, Lorem Ipsum
+     						</p>
+     				</div>
+     			</div>
+     			<div class="col-md-3">
+     			 <div class="cellar-logo  cellar_cellar-logo">
+     			 	<div class="cellar-logo__text">
+     			 		Realestate company
+     			 	</div>
+     			 	<span class="cellar-logo__autor">
+     			 		developed by Andrey Burashnikov
+     			 	</span>
+     			 </div>
+     			</div>
+     		</div>
+     	</div>
+     </footer>
+
+	<script src="js/slider.js"></script>
+	<script>
+		var blockOne = document.getElementById("search-block-one");
+		var blockTwo = document.getElementById("search-blocks");
+		var link = document.getElementsByClassName("search-sell-home__link");
+		
+	
+		function switchBlock(n){
+		 	if(n == 0) {
+		 		console.log(blockTwo);
+		 		blockOne.style.display="block";
+		 		blockTwo.style.display="none";
+		 		link[0].style.background = "#5596be";
+		 		link[0].style.color = "white";
+		 		link[1].style.background = "#c2f2ed";
+		 		link[1].style.color = "#4b83a6";
+		 	}  
+		 	if (n == 1){
+		 		blockTwo.style.display="block";
+		 		blockOne.style.display="none";
+		 		link[1].style.background = "#5596be";
+		 		link[1].style.color = "white";
+		 		link[0].style.background = "#c2f2ed";
+		 		link[0].style.color = "#4b83a6";
+		 		
+		 	}
+		 }
+
+	</script>
+</body>
+</html>
